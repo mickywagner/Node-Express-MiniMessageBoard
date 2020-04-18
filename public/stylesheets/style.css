@@ -65,7 +65,6 @@ a#back:hover {
 
 .message-user {
   color: black;
-  /* border-bottom: 1px solid rgb(52,59,65); */
   padding: 5px 10px;
   background-color: rgb(156,201,54);
   font-size: 0.8em;
@@ -75,14 +74,18 @@ a#back:hover {
   padding: 0 10px;
 }
 
+.message-user p {
+  color: rgb(52,59,65);
+}
+
+.message-user h4 {
+  font-size: 0.9rem;
+}
+
 .message-body {
   color: #00B7FF;
   padding: 10px;
   font-size: 0.8em;
-}
-
-.message-user p {
-  color: rgb(52,59,65);
 }
 
 .form {

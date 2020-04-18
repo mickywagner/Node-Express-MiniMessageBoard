@@ -3,4 +3,9 @@ extends layout
 block content
   h1= title
   a(href="/") Back to message board
-  p Please enter a #{title} here!
+  form(method="POST" action="/new")
+    label(for="user") User name:
+    input(name="user", id="user", type="text")
+    label(for="content")
+    textarea(name="content", id="content", placeholder="Enter your message here", cols="30", rows="10")
+    input(type="submit")

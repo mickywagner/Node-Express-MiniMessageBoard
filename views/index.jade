@@ -3,3 +3,9 @@ extends layout
 block content
   h1= title
   p Welcome to #{title}
+  .message-board-container
+  for message in messages
+    .message
+      h2=message.text
+      h4=message.user
+      p=message.added

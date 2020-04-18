@@ -38,6 +38,9 @@ button:hover {
   background: rgb(156,201,54);
 }
 
+button:focus {
+  outline: none;
+}
 
 a {
   color: black;

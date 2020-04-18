@@ -12,7 +12,7 @@ router.get('/', function(req, res, next) {
 });
 
 router.get('/new', function(req, res, next) {
-  res.render('new', { title: 'Enter new message'})
+  res.render('new', { title: 'Mini Message Board'})
 })
 
 router.post('/new', function(req, res, next) {

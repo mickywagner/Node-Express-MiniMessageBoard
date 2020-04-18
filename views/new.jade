@@ -1,11 +1,13 @@
 extends layout
 
 block content
-  h1= title
-  a(href="/") Back to message board
-  form(method="POST" action="/new")
-    label(for="user") User name:
-    input(name="user", id="user", type="text")
-    label(for="messageText")
-    textarea(name="messageText", id="messageText", placeholder="Enter your message here", cols="30", rows="10")
-    input(type="submit")
+  header
+    h1= title
+    a(href="/", id="back") Back to message board
+  .form
+    h2 Enter a new message
+    form(method="POST" action="/new")
+      input(name="user", id="user", placeholder="Username", type="text")
+      label(for="messageText")
+      textarea(name="messageText", id="messageText", placeholder="Enter your message here", cols="30", rows="10")
+      input(type="submit")

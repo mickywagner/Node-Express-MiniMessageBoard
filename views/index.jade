@@ -1,12 +1,18 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
-  a(href="/new") New message
-  .message-board-container
+  header
+    div.title
+      h1= title
+      p Welcome to my Node/Express #{title} 
+    .button
+      button
+        a(href="/new") New message
   for message in messages
-    .message
-      h2=message.text
-      h4=message.user
-      p=message.added
+    .message-board-container
+      .message-user
+        h4=message.user
+        p=message.added
+      .message-body
+        h2=message.text
+      

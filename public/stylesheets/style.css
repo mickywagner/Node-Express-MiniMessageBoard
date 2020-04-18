@@ -1,12 +1,72 @@
 body {
-  padding: 50px;
+  margin: 0;
+  padding: 0;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background: lightgray;
+}
+
+header {
+  background: rgb(52,59,65);
+  padding: 10px 20px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header h1 {
+  color: rgb(156,201,54);
+}
+
+header p {
+  color: white;
+}
+
+.button {
+  align-self: flex-end;
+  margin-bottom: 15px;
+}
+
+button {
+  background: #00B7FF;
+  border: none;
+  padding: 10px; 
+  border-radius: 5px;
 }
 
 a {
-  color: #00B7FF;
+  color: black;
+  text-decoration: none;
 }
 
+.message-board-container {
+  background: white;
+  border-radius: 2px;
+  margin: 10px;
+  border: 1px solid rgb(52,59,65);
+}
+
+.message-user {
+  color: black;
+  /* border-bottom: 1px solid rgb(52,59,65); */
+  padding: 5px 10px;
+  background-color: rgb(156,201,54);
+  font-size: 0.8em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+
+.message-body {
+  color: #00B7FF;
+  padding: 10px;
+  font-size: 0.8em;
+}
+
+.message-user p {
+  color: rgb(52,59,65);
+}
 form {
   width: 50%;
 }
